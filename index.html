@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+        });
+    </script>
+      
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+      
+    
+    <title> Welcome to Singapofghjklre! </title>
+  </head>
+  <body data-spy="scroll" data-target="#website-navbar" data-offset="100">
+      <nav id="website-navbar" class="navbar navbar-expand-md navbar-light bg-white sticky-top">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/icons/singapore_lion.png">
+                Singapore Tourism
+            </a> 
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar-content" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#title-text"> Top of Page </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main-picture"> Landmarks </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#other-items"> Nature and Others </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Culture and National Education </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#singlish"> Singlish Dictionary </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#national-anthem"> National Anthem </a>
+                            <a class="dropdown-item" href="#timeline-row"> Singapore's History </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+      </nav>
+      <div class="container">
+        <div class="row m-3" id="title-text">
+          <div class="col-md-12">
+              <br>
+              <!-- Title Jumbotron -->
+              <div class="jumbotron">
+                <div class="row">
+                    <div class="col pt-5">
+                        <h1 class="display-4"> Welcome to <span class="badge badge-danger"> Singapore </span></h1> 
+                        <h4> A <span class="badge badge-warning badge-pill"> sunny </span> island in Southeast Asia!</h4>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/icons/singapore_lion.png" height=200px>
+                    </div>
+                </div>
+               </div>
+          </div>            
+        </div>
+        
+        <div class="row" id="main-picture"> 
+            <div class="col-md-12">
+            <div class="alert alert-info alert-dismissible fade show"> 
+                <button type="button" class="close" data-dismiss="alert"> &times; </button>
+                This site was created by (name). </div>
+                <div id="landmarks-carousel" class="carousel slide" data-ride="carousel">
+
+                    <!-- Carousel Elements -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/landmarks/landmark_1.jpg" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h1> Gardens by the Bay </h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/landmarks/landmark_2.jpg" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h1> Merlion </h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/landmarks/landmark_3.jpg" class="img-fluid">
+                            <div class="carousel-caption">
+                                <h1> Singapore Zoo </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <a class="carousel-control-prev" href=#landmarks-carousel data-slide="prev">
+                        <span class="fa fa-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control-next" href=#landmarks-carousel data-slide="next">
+                        <span class="fa fa-chevron-right"></span>
+                    </a>
+
+                    <!-- Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#landmarks-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#landmarks-carousel" data-slide-to="1"></li>
+                        <li data-target="#landmarks-carousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5" id="icons"> 
+            <div class="col-md-4 text-center">
+                <h4>Attractions</h4>
+                <img src="assets/icons/attraction.png" alt="" 
+                     style="width: 100px" class="m-3">
+                <a href="https://www.tripadvisor.com.sg/Attractions-g294265-Activities-Singapore.html"
+                   class="btn btn-primary" style="width:180px">
+                    Visit Our Attractions </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Hotel</h4>
+                <img src="assets/icons/hotel.png" alt="" 
+                     style="width: 100px" class="m-3">
+                <a href="https://www.agoda.com/en-sg/country/singapore.html?cid=1729675&tag=240682_ae04376884622f53a3e9bd62df524bd6"
+                   class="btn btn-primary" style="width:120px">
+                Book a Hotel </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Food</h4>
+                <img src="assets/icons/food.png" alt="" 
+                     style="width: 100px" class="m-3">
+                <a href="https://migrationology.com/singapore-food/"
+                   class="btn btn-primary" style="width:165px">
+                Explore Local Food </a>
+            </div>
+        </div>
+        
+        <div class="row p-5" id="other-items"> 
+            <div class="col-md-6 text-center p-4" style="background-color: bisque">
+                <h2>Visit Sentosa</h2>
+                <img src="assets/landmarks/sentosa.jpg" alt="" style="width: 100%" class="p-3">
+                <a href="http://www.sentosa.com"><p>Find out more</p></a>
+            </div>
+            <div class="col-md-6 text-center p-4" style="background-color:wheat">
+                <h2>Explore Singapore</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19036186565!2d103.70416169489619!3d1.3143393869403048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2ssg!4v1584326505821!5m2!1sen!2ssg" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>            
+        </div>
+        
+        <div class="row py-3" id="nature">
+            <div class="col-md-12 nature-gallery">
+                <h2 class="nature-gallery-title">
+                    Nature Gallery </h2>
+                
+                <div class="card-deck">
+                    <div class="card bg-danger">
+                        <img class="card-img-top" src="assets/nature/vanda_miss_joaquim.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title"> Vanda Miss Joaquim </h4>
+                            <p class="card-text"> This is Singapore's national flower. </p>
+                        </div>
+                    </div>
+                    <div class="card bg-info">
+                        <img class="card-img-top" src="assets/nature/otter.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title"> Smooth-Coated Otters </h4>
+                            <p class="card-text"> They are critically endangered!
+                        </div>
+                    </div>
+                    <div class="card bg-success">
+                        <img class="card-img-top" src="assets/nature/mangrove.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title"> Mangroves </h4>
+                            <p class="card-text"> A unique species of tree. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+        <div class="row py-3" id="singlish">
+            <div class="col-md-12">
+                <h1><span class="badge badge-info"> Singlish Dictionary </span></h1>
+                <table class="table table-borderless">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th> No. </th>
+                            <th class="w-50"> Singlish Word </th>
+                            <th> Language of Origin </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1 </td>
+                            <td> 
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                   data-content="An expression to display shock."
+                                   data-placement="right" title="Alamak" data-trigger="hover">
+                                Alamak </a>    
+                            </td>
+                            <td> Malay </td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td> 
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                   data-content="Being afraid of losing out."
+                                   data-placement="right" title="Kiasu" data-trigger="hover">
+                                Kiasu </a>
+                            </td>
+                            <td> Hokkien </td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td>
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                   data-content="'Why did you not invite me?'"
+                                   data-placement="right" title="Bojio" data-trigger="hover">
+                                Bojio </a>
+                            </td>
+                            <td> Hokkien </td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td> 
+                                <a href="#singlish" data-toggle="popover" data-container="body"
+                                   data-content="Describes something that is elite."
+                                   data-placement="right" title="Atas" data-trigger="hover">
+                                Atas </a>
+                            </td>
+                            <td> Malay </td>
+                        </tr>
+                    </tbody>
+                </table>
+            <hr>
+            </div>
+        </div>
+          
+        <div class="row pb-3" id="national-anthem">
+            <div class="col-md-12 text-center mb-3 py-1" style="border: 1px solid">
+                <h1><a href="#" data-toggle="tooltip" data-placement="top" title="<h4><em>Majulah Singapura</em></h4>" data-html="true">National Anthem</a> of Singapore </h1>
+            </div>
+            <div class="col-md-7 text-center">
+                <div id="anthem-accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0"><button type="button" class="btn btn-link btn-lg" data-toggle="collapse" data-target="#english-anthem-body"> Click Here For National Anthem in English </button></h2>
+                        </div>
+                        <div id="english-anthem-body" class="card-body anthem-body collapse" data-parent="#anthem-accordion">
+                            <p> Come, fellow Singaporeans; Let us progress towards happiness together </p>
+                            <p> May our noble aspiration bring; Singapore success </p>
+                            <p> Come, let us unite; In a new spirit </p>
+                            <p> Let our voices soar as one; Onward Singapore! Onward Singapore! </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0"><button type="button" class="btn btn-link btn-lg" data-toggle="collapse" data-target="#chinese-anthem-body"> Click Here For National Anthem in Chinese </button></h2>
+                        </div>
+                        <div id="chinese-anthem-body" class="card-body anthem-body collapse" data-parent="#anthem-accordion">
+                            <p> 来吧，新加坡人民，让我们共同向幸福迈进；</p>
+                            <p> 我们崇高的理想，要使新加坡成功。 </p>
+                            <p> 来吧，让我们以新的精神，团结在一起；</p>
+                            <p> 我们齐声欢呼： 前进吧，新加坡！前进吧，新加坡！ </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 text-center">
+                <button type="button" class="btn btn-danger btn-lg malay-anthem-btn" data-toggle="collapse" data-target="#malay-anthem-body">
+                    National Anthem (Malay) </button>
+                <div id="malay-anthem-body" class="collapse"> 
+                    <p> Mari kita rakyat Singapura </p>
+                    <p> Sama-sama menuju bahagia </p>
+                    <p> Cita-cita kita yang mulia; Berjaya Singapura </p>
+                    <p> Marilah kita bersatu; Dengan semangat yang baru </p>
+                    <p> Semua kita berseru </p>
+                    <p> Majulah Singapura! Majulah Singapura! </p>
+                </div>
+            </div>
+        </div>
+        <hr> 
+          
+        <div class="row pb-3" id="timeline-row">
+            <div class="col-md-12 text-center">
+                <h1 class="display-4 mb-3"> Singapore's History </h1>
+            </div>
+            <div class="col-md-12 py-3 timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h2> Year 1299 </h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-1">Discovering Temasek</a></h3>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2> 28 January 1819 </h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-2">Arrival of the British</a></h3>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2> 15 February 1942 </h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-3">Singapore Falls to the Japanese</a></h3>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2> 9 August 1965 </h2>
+                        <h3><a href="#" data-toggle="modal" data-target="#modal-4">Our Independence</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history-modals">
+            <div class="modal fade" id="modal-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"> Discovering Temasek </h5>
+                        </div>
+                        <div class="modal-body">
+                            <p> Sang Nila Utama discovers the fishing village of Temasek and renames it as "Singapura". </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"> Arrival of the British </h5>
+                        </div>
+                        <div class="modal-body">
+                            <p> Sir Stamford Raffles arrives in Singapore and establishes it as a British trading port. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"> Singapore Falls to the Japanese </h5>
+                        </div>
+                        <div class="modal-body">
+                            <p> The Japanese Occupation of Singapore during World War 2 begins after the British surrender. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"> Our Independence </h5>
+                        </div>
+                        <div class="modal-body">
+                            <p> Singapore gains independence from Malaysia. </p>      
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
+
